@@ -48,7 +48,7 @@ const corsConfig: CorsConfig = {
   origin: (requestOrigin) => {
     const allowedOrigins = [
       'http://localhost:3000',
-      'https://your-firebase-app.web.app',
+      'https://patrick-interview-task.web.app',
     ]
     return allowedOrigins.includes(requestOrigin) ? requestOrigin : false
   },
