@@ -46,7 +46,10 @@ const corsConfig: CorsConfig = {
   */
   // origin: true,
   origin: (requestOrigin) => {
-    const allowedOrigins = ['http://localhost:3000']
+    const allowedOrigins = [
+      'http://localhost:3000',
+      'https://your-firebase-app.web.app',
+    ]
     return allowedOrigins.includes(requestOrigin) ? requestOrigin : false
   },
 
